@@ -1,0 +1,31 @@
+import { __decorate, __extends } from "tslib";
+import { Injectable } from '@angular/core';
+import { AwesomeCordovaNativePlugin, cordova } from '@awesome-cordova-plugins/core';
+import * as i0 from "@angular/core";
+var BioCatch = /** @class */ (function (_super) {
+    __extends(BioCatch, _super);
+    function BioCatch() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    BioCatch.prototype.start = function (customerSessionID, wupUrl, publicKey) { return cordova(this, "start", {}, arguments); };
+    BioCatch.prototype.pause = function () { return cordova(this, "pause", {}, arguments); };
+    BioCatch.prototype.resume = function () { return cordova(this, "resume", {}, arguments); };
+    BioCatch.prototype.stop = function () { return cordova(this, "stop", {}, arguments); };
+    BioCatch.prototype.resetSession = function () { return cordova(this, "resetSession", {}, arguments); };
+    BioCatch.prototype.changeContext = function (contextName) { return cordova(this, "changeContext", {}, arguments); };
+    BioCatch.prototype.updateCustomerSessionID = function (customerSessionID) { return cordova(this, "updateCustomerSessionID", {}, arguments); };
+    BioCatch.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: BioCatch, deps: null, target: i0.ɵɵFactoryTarget.Injectable });
+    BioCatch.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: BioCatch });
+    BioCatch.pluginName = "BioCatch";
+    BioCatch.plugin = "cordova-plugin-biocatch";
+    BioCatch.pluginRef = "BioCatch";
+    BioCatch.repo = "https://bitbucket.org/carlos_orellana/ionic-plugin";
+    BioCatch.platforms = ["iOS", "Android"];
+    BioCatch = __decorate([], BioCatch);
+    return BioCatch;
+}(AwesomeCordovaNativePlugin));
+export { BioCatch };
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: BioCatch, decorators: [{
+            type: Injectable
+        }], propDecorators: { start: [], pause: [], resume: [], stop: [], resetSession: [], changeContext: [], updateCustomerSessionID: [] } });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9zcmMvQGF3ZXNvbWUtY29yZG92YS1wbHVnaW5zL3BsdWdpbnMvYmlvY2F0Y2gvbmd4L2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQSxPQUFPLEVBQUUsVUFBVSxFQUFFLE1BQU0sZUFBZSxDQUFDO0FBQzNDLE9BQU8sdUNBQStDLE1BQU0sK0JBQStCLENBQUM7OztJQThCOUQsNEJBQTBCOzs7O0lBVXRELHdCQUFLLGFBQUMsaUJBQWdDLEVBQUUsTUFBYyxFQUFFLFNBQXdCO0lBVWhGLHdCQUFLO0lBVUwseUJBQU07SUFVTix1QkFBSTtJQVVKLCtCQUFZO0lBV1osZ0NBQWEsYUFBQyxXQUFtQjtJQVdqQywwQ0FBdUIsYUFBQyxpQkFBZ0M7MEdBeEU3QyxRQUFROzhHQUFSLFFBQVE7Ozs7OztJQUFSLFFBQVEsa0JBQVIsUUFBUTttQkEvQnJCO0VBK0I4QiwwQkFBMEI7U0FBM0MsUUFBUTs0RkFBUixRQUFRO2tCQURwQixVQUFVOzhCQVdULEtBQUssTUFVTCxLQUFLLE1BVUwsTUFBTSxNQVVOLElBQUksTUFVSixZQUFZLE1BV1osYUFBYSxNQVdiLHVCQUF1QiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEluamVjdGFibGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IENvcmRvdmEsIEF3ZXNvbWVDb3Jkb3ZhTmF0aXZlUGx1Z2luLCBQbHVnaW4gfSBmcm9tICdAYXdlc29tZS1jb3Jkb3ZhLXBsdWdpbnMvY29yZSc7XG5cbi8qKlxuICogQG5hbWUgQmlvQ2F0Y2hcbiAqIEBkZXNjcmlwdGlvblxuICogQmlvQ2F0Y2ggU0RLIENvcmRvdmEgc3VwcG9ydFxuICogQHVzYWdlXG4gKiBgYGB0eXBlc2NyaXB0XG4gKiBpbXBvcnQgeyBCaW9DYXRjaCB9IGZyb20gJ0Bhd2Vzb21lLWNvcmRvdmEtcGx1Z2lucy9iaW9jYXRjaCc7XG4gKlxuICpcbiAqIGNvbnN0cnVjdG9yKHByaXZhdGUgYmlvY2F0Y2g6IEJpb0NhdGNoKSB7IH1cbiAqXG4gKiAuLi5cbiAqXG4gKlxuICogdGhpcy5iaW9jYXRjaC5zdGFydCgnY3VzdG9tZXItc2Vzc2lvbi0xJywgJ2h0dHA6Ly9leGFtcGxlLmNvbScsICdzb21lLXB1YmxpYy1rZXknKVxuICogICAudGhlbigocmVzOiBhbnkpID0+IGNvbnNvbGUubG9nKHJlcykpXG4gKiAgIC5jYXRjaCgoZXJyb3I6IGFueSkgPT4gY29uc29sZS5lcnJvcihlcnJvcikpO1xuICpcbiAqIGBgYFxuICovXG5AUGx1Z2luKHtcbiAgcGx1Z2luTmFtZTogJ0Jpb0NhdGNoJyxcbiAgcGx1Z2luOiAnY29yZG92YS1wbHVnaW4tYmlvY2F0Y2gnLFxuICBwbHVnaW5SZWY6ICdCaW9DYXRjaCcsXG4gIHJlcG86ICdodHRwczovL2JpdGJ1Y2tldC5vcmcvY2FybG9zX29yZWxsYW5hL2lvbmljLXBsdWdpbicsXG4gIHBsYXRmb3JtczogWydpT1MnLCAnQW5kcm9pZCddLFxufSlcbkBJbmplY3RhYmxlKClcbmV4cG9ydCBjbGFzcyBCaW9DYXRjaCBleHRlbmRzIEF3ZXNvbWVDb3Jkb3ZhTmF0aXZlUGx1Z2luIHtcbiAgLyoqXG4gICAqIFN0YXJ0IGEgc2Vzc2lvblxuICAgKlxuICAgKiBAcGFyYW0gY3VzdG9tZXJTZXNzaW9uSUQge1N0cmluZ30gQ3VzdG9tZXIgc2Vzc2lvbiBpZFxuICAgKiBAcGFyYW0gd3VwVXJsIHtTdHJpbmd9IFdVUCBzZXJ2ZXIgVVJMXG4gICAqIEBwYXJhbSBwdWJsaWNLZXkge1N0cmluZ30gUHVibGljIEtleVxuICAgKiBAcmV0dXJucyB7UHJvbWlzZTx2b2lkPn0gUmV0dXJucyBhIHByb21pc2VcbiAgICovXG4gIEBDb3Jkb3ZhKClcbiAgc3RhcnQoY3VzdG9tZXJTZXNzaW9uSUQ6IHN0cmluZyB8IG51bGwsIHd1cFVybDogc3RyaW5nLCBwdWJsaWNLZXk6IHN0cmluZyB8IG51bGwpOiBQcm9taXNlPHZvaWQ+IHtcbiAgICByZXR1cm47XG4gIH1cblxuICAvKipcbiAgICogUGF1c2UgdGhlIHNlc3Npb25cbiAgICpcbiAgICogQHJldHVybnMge1Byb21pc2U8dm9pZD59IFJldHVybnMgYSBwcm9taXNlXG4gICAqL1xuICBAQ29yZG92YSgpXG4gIHBhdXNlKCk6IFByb21pc2U8dm9pZD4ge1xuICAgIHJldHVybjtcbiAgfVxuXG4gIC8qKlxuICAgKiBSZXN1bWUgdGhlIHNlc3Npb25cbiAgICpcbiAgICogQHJldHVybnMge1Byb21pc2U8dm9pZD59IFJldHVybnMgYSBwcm9taXNlXG4gICAqL1xuICBAQ29yZG92YSgpXG4gIHJlc3VtZSgpOiBQcm9taXNlPHZvaWQ+IHtcbiAgICByZXR1cm47XG4gIH1cblxuICAvKipcbiAgICogU3RvcCB0aGUgc2Vzc2lvblxuICAgKlxuICAgKiBAcmV0dXJucyB7UHJvbWlzZTx2b2lkPn0gUmV0dXJucyBhIHByb21pc2VcbiAgICovXG4gIEBDb3Jkb3ZhKClcbiAgc3RvcCgpOiBQcm9taXNlPHZvaWQ+IHtcbiAgICByZXR1cm47XG4gIH1cblxuICAvKipcbiAgICogUmVzZXQgdGhlIHNlc3Npb25cbiAgICpcbiAgICogQHJldHVybnMge1Byb21pc2U8dm9pZD59IFJldHVybnMgYSBwcm9taXNlXG4gICAqL1xuICBAQ29yZG92YSgpXG4gIHJlc2V0U2Vzc2lvbigpOiBQcm9taXNlPHZvaWQ+IHtcbiAgICByZXR1cm47XG4gIH1cblxuICAvKipcbiAgICogQ2hhbmdlIHRoZSBzZXNzaW9uIGNvbnRleHRcbiAgICpcbiAgICogQHBhcmFtIGNvbnRleHROYW1lIHtTdHJpbmd9IENvbnRleHQgbmFtZVxuICAgKiBAcmV0dXJucyB7UHJvbWlzZTx2b2lkPn0gUmV0dXJucyBhIHByb21pc2VcbiAgICovXG4gIEBDb3Jkb3ZhKClcbiAgY2hhbmdlQ29udGV4dChjb250ZXh0TmFtZTogc3RyaW5nKTogUHJvbWlzZTx2b2lkPiB7XG4gICAgcmV0dXJuO1xuICB9XG5cbiAgLyoqXG4gICAqIFVwZGF0ZSB0aGUgY3VzdG9tZXIgc2Vzc2lvbiBJRFxuICAgKlxuICAgKiBAcGFyYW0gY3VzdG9tZXJTZXNzaW9uSUQge1N0cmluZ31cbiAgICogQHJldHVybnMge1Byb21pc2U8dm9pZD59IFJldHVybnMgYSBwcm9taXNlXG4gICAqL1xuICBAQ29yZG92YSgpXG4gIHVwZGF0ZUN1c3RvbWVyU2Vzc2lvbklEKGN1c3RvbWVyU2Vzc2lvbklEOiBzdHJpbmcgfCBudWxsKTogUHJvbWlzZTx2b2lkPiB7XG4gICAgcmV0dXJuO1xuICB9XG59XG4iXX0=

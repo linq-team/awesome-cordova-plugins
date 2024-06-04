@@ -1,0 +1,27 @@
+import { __decorate, __extends } from "tslib";
+import { Injectable } from '@angular/core';
+import { AwesomeCordovaNativePlugin, cordova } from '@awesome-cordova-plugins/core';
+import * as i0 from "@angular/core";
+var Instagram = /** @class */ (function (_super) {
+    __extends(Instagram, _super);
+    function Instagram() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Instagram.prototype.isInstalled = function () { return cordova(this, "isInstalled", { "callbackStyle": "node" }, arguments); };
+    Instagram.prototype.share = function (canvasIdOrDataUrl, caption) { return cordova(this, "share", { "callbackStyle": "node" }, arguments); };
+    Instagram.prototype.shareAsset = function (assetLocalIdentifier) { return cordova(this, "shareAsset", { "callbackOrder": "reverse" }, arguments); };
+    Instagram.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: Instagram, deps: null, target: i0.ɵɵFactoryTarget.Injectable });
+    Instagram.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: Instagram });
+    Instagram.pluginName = "Instagram";
+    Instagram.plugin = "cordova-instagram-plugin";
+    Instagram.pluginRef = "Instagram";
+    Instagram.repo = "https://github.com/vstirbu/InstagramPlugin";
+    Instagram.platforms = ["Android", "iOS"];
+    Instagram = __decorate([], Instagram);
+    return Instagram;
+}(AwesomeCordovaNativePlugin));
+export { Instagram };
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: Instagram, decorators: [{
+            type: Injectable
+        }], propDecorators: { isInstalled: [], share: [], shareAsset: [] } });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9zcmMvQGF3ZXNvbWUtY29yZG92YS1wbHVnaW5zL3BsdWdpbnMvaW5zdGFncmFtL25neC9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsT0FBTyxFQUFFLFVBQVUsRUFBRSxNQUFNLGVBQWUsQ0FBQztBQUMzQyxPQUFPLHVDQUErQyxNQUFNLCtCQUErQixDQUFDOzs7SUEyQjdELDZCQUEwQjs7OztJQVN2RCwrQkFBVztJQWVYLHlCQUFLLGFBQUMsaUJBQXlCLEVBQUUsT0FBZ0I7SUFhakQsOEJBQVUsYUFBQyxvQkFBNEI7MkdBckM1QixTQUFTOytHQUFULFNBQVM7Ozs7OztJQUFULFNBQVMsa0JBQVQsU0FBUztvQkE1QnRCO0VBNEIrQiwwQkFBMEI7U0FBNUMsU0FBUzs0RkFBVCxTQUFTO2tCQURyQixVQUFVOzhCQVVULFdBQVcsTUFlWCxLQUFLLE1BYUwsVUFBVSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEluamVjdGFibGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IENvcmRvdmEsIEF3ZXNvbWVDb3Jkb3ZhTmF0aXZlUGx1Z2luLCBQbHVnaW4gfSBmcm9tICdAYXdlc29tZS1jb3Jkb3ZhLXBsdWdpbnMvY29yZSc7XG5cbi8qKlxuICogQG5hbWUgSW5zdGFncmFtXG4gKiBAZGVzY3JpcHRpb24gU2hhcmUgYSBwaG90byB3aXRoIHRoZSBpbnN0YWdyYW0gYXBwXG4gKiBAdXNhZ2VcbiAqIGBgYHR5cGVzY3JpcHRcbiAqIGltcG9ydCB7IEluc3RhZ3JhbSB9IGZyb20gJ0Bhd2Vzb21lLWNvcmRvdmEtcGx1Z2lucy9pbnN0YWdyYW0vbmd4JztcbiAqXG4gKiBjb25zdHJ1Y3Rvcihwcml2YXRlIGluc3RhZ3JhbTogSW5zdGFncmFtKSB7IH1cbiAqXG4gKiAuLi5cbiAqXG4gKiB0aGlzLmluc3RhZ3JhbS5zaGFyZSgnZGF0YTppbWFnZS9wbmc7dWhkdWhmM2hmaWYzMycsICdDYXB0aW9uJylcbiAqICAgLnRoZW4oKCkgPT4gY29uc29sZS5sb2coJ1NoYXJlZCEnKSlcbiAqICAgLmNhdGNoKChlcnJvcjogYW55KSA9PiBjb25zb2xlLmVycm9yKGVycm9yKSk7XG4gKlxuICogYGBgXG4gKi9cbkBQbHVnaW4oe1xuICBwbHVnaW5OYW1lOiAnSW5zdGFncmFtJyxcbiAgcGx1Z2luOiAnY29yZG92YS1pbnN0YWdyYW0tcGx1Z2luJyxcbiAgcGx1Z2luUmVmOiAnSW5zdGFncmFtJyxcbiAgcmVwbzogJ2h0dHBzOi8vZ2l0aHViLmNvbS92c3RpcmJ1L0luc3RhZ3JhbVBsdWdpbicsXG4gIHBsYXRmb3JtczogWydBbmRyb2lkJywgJ2lPUyddLFxufSlcbkBJbmplY3RhYmxlKClcbmV4cG9ydCBjbGFzcyBJbnN0YWdyYW0gZXh0ZW5kcyBBd2Vzb21lQ29yZG92YU5hdGl2ZVBsdWdpbiB7XG4gIC8qKlxuICAgKiBEZXRlY3QgaWYgdGhlIEluc3RhZ3JhbSBhcHBsaWNhdGlvbiBpcyBpbnN0YWxsZWQgb24gdGhlIGRldmljZS5cbiAgICpcbiAgICogQHJldHVybnMge1Byb21pc2U8Ym9vbGVhbnxzdHJpbmc+fSBSZXR1cm5zIGEgcHJvbWlzZSB0aGF0IHJldHVybnMgYSBib29sZWFuIHZhbHVlIGlmIGluc3RhbGxlZCwgb3IgdGhlIGFwcCB2ZXJzaW9uIG9uIGFuZHJvaWRcbiAgICovXG4gIEBDb3Jkb3ZhKHtcbiAgICBjYWxsYmFja1N0eWxlOiAnbm9kZScsXG4gIH0pXG4gIGlzSW5zdGFsbGVkKCk6IFByb21pc2U8Ym9vbGVhbiB8IHN0cmluZz4ge1xuICAgIHJldHVybjtcbiAgfVxuXG4gIC8qKlxuICAgKiBTaGFyZSBhbiBpbWFnZSBvbiBJbnN0YWdyYW1cbiAgICogTm90ZTogSW5zdGFncmFtIGFwcCBzdG9wcGVkIGFjY2VwdGluZyBwcmUtZmlsbGVkIGNhcHRpb25zIG9uIGJvdGggaU9TIGFuZCBBbmRyb2lkLiBBcyBhIHdvcmstYXJvdW5kLCB0aGUgY2FwdGlvbiBpcyBjb3BpZWQgdG8gdGhlIGNsaXBib2FyZC4gWW91IGhhdmUgdG8gaW5mb3JtIHlvdXIgdXNlcnMgdG8gcGFzdGUgdGhlIGNhcHRpb24uXG4gICAqXG4gICAqIEBwYXJhbSBjYW52YXNJZE9yRGF0YVVybCBUaGUgY2FudmFzIGVsZW1lbnQgaWQgb3IgdGhlIGRhdGFVUkwgb2YgdGhlIGltYWdlIHRvIHNoYXJlXG4gICAqIEBwYXJhbSBjYXB0aW9uIFRoZSBjYXB0aW9uIG9mIHRoZSBpbWFnZVxuICAgKiBAcmV0dXJucyB7UHJvbWlzZTxhbnk+fSBSZXR1cm5zIGEgcHJvbWlzZSB0aGF0IHJlc29sdmVzIGlmIHRoZSBpbWFnZSB3YXMgc2hhcmVkXG4gICAqL1xuICBAQ29yZG92YSh7XG4gICAgY2FsbGJhY2tTdHlsZTogJ25vZGUnLFxuICB9KVxuICBzaGFyZShjYW52YXNJZE9yRGF0YVVybDogc3RyaW5nLCBjYXB0aW9uPzogc3RyaW5nKTogUHJvbWlzZTxhbnk+IHtcbiAgICByZXR1cm47XG4gIH1cblxuICAvKipcbiAgICogU2hhcmUgYSBsaWJyYXJ5IGFzc2V0IG9yIHZpZGVvXG4gICAqXG4gICAqIEBwYXJhbSBhc3NldExvY2FsSWRlbnRpZmllciBBIGxvY2FsIGZpbGVVUklcbiAgICogQHJldHVybnMge1Byb21pc2U8YW55Pn0gUmV0dXJucyBhIHByb21pc2UgdGhhdCByZXNvbHZlcyBpZiB0aGUgaW1hZ2Ugd2FzIHNoYXJlZFxuICAgKi9cbiAgQENvcmRvdmEoe1xuICAgIGNhbGxiYWNrT3JkZXI6ICdyZXZlcnNlJyxcbiAgfSlcbiAgc2hhcmVBc3NldChhc3NldExvY2FsSWRlbnRpZmllcjogc3RyaW5nKTogUHJvbWlzZTxhbnk+IHtcbiAgICByZXR1cm47XG4gIH1cbn1cbiJdfQ==

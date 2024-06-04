@@ -1,0 +1,58 @@
+import { __decorate, __extends } from "tslib";
+import { Injectable } from '@angular/core';
+import { Plugin, Cordova, IonicNativePlugin, } from '@ionic-native/core';
+import { Observable } from 'rxjs';
+import * as i0 from "@angular/core";
+export var FirebaseModelStatus;
+(function (FirebaseModelStatus) {
+    FirebaseModelStatus["downloading"] = "downloading";
+    FirebaseModelStatus["completed"] = "completed";
+})(FirebaseModelStatus || (FirebaseModelStatus = {}));
+export var FirebaseModelInputType;
+(function (FirebaseModelInputType) {
+    FirebaseModelInputType["path"] = "path";
+    FirebaseModelInputType["base64string"] = "base64string";
+    FirebaseModelInputType["blob"] = "blob";
+})(FirebaseModelInputType || (FirebaseModelInputType = {}));
+var FirebaseModelConfigResult = /** @class */ (function () {
+    function FirebaseModelConfigResult() {
+    }
+    return FirebaseModelConfigResult;
+}());
+export { FirebaseModelConfigResult };
+var FirebaseModelClassifyResult = /** @class */ (function () {
+    function FirebaseModelClassifyResult() {
+    }
+    return FirebaseModelClassifyResult;
+}());
+export { FirebaseModelClassifyResult };
+var FirebaseModelInput = /** @class */ (function () {
+    function FirebaseModelInput() {
+    }
+    return FirebaseModelInput;
+}());
+export { FirebaseModelInput };
+var FirebaseModel = /** @class */ (function (_super) {
+    __extends(FirebaseModel, _super);
+    function FirebaseModel() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    FirebaseModel.prototype.configure = function (arg1) { return cordova(this, "configure", { "successIndex": 1, "errorIndex": 2, "observable": true }, arguments); };
+    FirebaseModel.prototype.classify = function (arg1) { return cordova(this, "classify", {}, arguments); };
+    FirebaseModel.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: FirebaseModel, deps: null, target: i0.ɵɵFactoryTarget.Injectable });
+    FirebaseModel.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: FirebaseModel });
+    FirebaseModel.pluginName = "FirebaseModel";
+    FirebaseModel.plugin = "cordova-plugin-firebase-model";
+    FirebaseModel.pluginRef = "FirebaseModel";
+    FirebaseModel.repo = "";
+    FirebaseModel.install = "ionic cordova plugin add cordova-plugin-firebase-model";
+    FirebaseModel.installVariables = [];
+    FirebaseModel.platforms = ["iOS"];
+    FirebaseModel = __decorate([], FirebaseModel);
+    return FirebaseModel;
+}(IonicNativePlugin));
+export { FirebaseModel };
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: FirebaseModel, decorators: [{
+            type: Injectable
+        }], propDecorators: { configure: [], classify: [] } });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9zcmMvQGF3ZXNvbWUtY29yZG92YS1wbHVnaW5zL3BsdWdpbnMvZmlyZWJhc2UtbW9kZWwvbmd4L2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQSxPQUFPLEVBQUUsVUFBVSxFQUFFLE1BQU0sZUFBZSxDQUFDO0FBQzNDLE9BQU8sRUFDTCxNQUFNLEVBQ04sT0FBTyxFQUlQLGlCQUFpQixHQUNsQixNQUFNLG9CQUFvQixDQUFDO0FBQzVCLE9BQU8sRUFBRSxVQUFVLEVBQUUsTUFBTSxNQUFNLENBQUM7O0FBRWxDLE1BQU0sQ0FBTixJQUFZLG1CQUdYO0FBSEQsV0FBWSxtQkFBbUI7SUFDN0Isa0RBQTJCLENBQUE7SUFDM0IsOENBQXVCLENBQUE7QUFDekIsQ0FBQyxFQUhXLG1CQUFtQixLQUFuQixtQkFBbUIsUUFHOUI7QUFFRCxNQUFNLENBQU4sSUFBWSxzQkFJWDtBQUpELFdBQVksc0JBQXNCO0lBQ2hDLHVDQUFhLENBQUE7SUFDYix1REFBNkIsQ0FBQTtJQUM3Qix1Q0FBYSxDQUFBO0FBQ2YsQ0FBQyxFQUpXLHNCQUFzQixLQUF0QixzQkFBc0IsUUFJakM7Ozs7b0NBcEJEOzs7Ozs7c0NBQUE7Ozs7Ozs2QkFBQTs7OztJQStGbUMsaUNBQWlCOzs7O0lBWWxELGlDQUFTLGFBQUMsSUFBWTtJQVd0QixnQ0FBUSxhQUFDLElBQXdCOytHQXZCdEIsYUFBYTttSEFBYixhQUFhOzs7Ozs7OztJQUFiLGFBQWEsa0JBQWIsYUFBYTt3QkEvRjFCO0VBK0ZtQyxpQkFBaUI7U0FBdkMsYUFBYTs0RkFBYixhQUFhO2tCQUR6QixVQUFVOzhCQWFULFNBQVMsTUFXVCxRQUFRIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSW5qZWN0YWJsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuaW1wb3J0IHtcbiAgUGx1Z2luLFxuICBDb3Jkb3ZhLFxuICBDb3Jkb3ZhUHJvcGVydHksXG4gIENvcmRvdmFJbnN0YW5jZSxcbiAgSW5zdGFuY2VQcm9wZXJ0eSxcbiAgSW9uaWNOYXRpdmVQbHVnaW4sXG59IGZyb20gJ0Bpb25pYy1uYXRpdmUvY29yZSc7XG5pbXBvcnQgeyBPYnNlcnZhYmxlIH0gZnJvbSAncnhqcyc7XG5cbmV4cG9ydCBlbnVtIEZpcmViYXNlTW9kZWxTdGF0dXMge1xuICBkb3dubG9hZGluZyA9ICdkb3dubG9hZGluZycsXG4gIGNvbXBsZXRlZCA9ICdjb21wbGV0ZWQnLFxufVxuXG5leHBvcnQgZW51bSBGaXJlYmFzZU1vZGVsSW5wdXRUeXBlIHtcbiAgcGF0aCA9ICdwYXRoJyxcbiAgYmFzZTY0c3RyaW5nID0gJ2Jhc2U2NHN0cmluZycsXG4gIGJsb2IgPSAnYmxvYicsXG59XG5cbmV4cG9ydCBjbGFzcyBGaXJlYmFzZU1vZGVsQ29uZmlnUmVzdWx0IHtcbiAgLyoqXG4gICAqIFJldHVybnMgdGhlIGN1cnJlbnQgc3RhdHVzIG9mIHRoZSBtb2RlbC5cbiAgICovXG4gIHN0YXR1czogRmlyZWJhc2VNb2RlbFN0YXR1cztcbiAgLyoqXG4gICAqIFJldHVybnMgdGhlIGN1cnJlbnQgcHJvZ3Jlc3Mgb2YgdGhlIGRvd25sb2FkaW5nIG1vZGVsLlxuICAgKi9cbiAgcHJvZ3Jlc3M6IG51bWJlcjtcbn1cblxuZXhwb3J0IGNsYXNzIEZpcmViYXNlTW9kZWxDbGFzc2lmeVJlc3VsdCB7XG4gIC8qKlxuICAgKiBSZXR1cm4gdGhlIGlkZW50aWZpZWQgaW1hZ2UgbGFiZWwgbmFtZS5cbiAgICovXG4gIGxhYmVsOiBzdHJpbmc7XG4gIC8qKlxuICAgKiBSZXR1cm5zIHRoZSBjb25maWRlbmNlIHNjb3JlIG9mIHRoZSBpZGVudGlmaWVkIGltYWdlLlxuICAgKi9cbiAgc2NvcmU6IG51bWJlcjtcbn1cblxuZXhwb3J0IGNsYXNzIEZpcmViYXNlTW9kZWxJbnB1dCB7XG4gIC8qKlxuICAgKiBTZXQgdGhlIG9uZSBvZiB0aGUgaW5wdXQgdHlwZXMgZGVmaW5lZCBpbiBGaXJlYmFzZU1vZGVsSW5wdXRUeXBlIGVudW0uXG4gICAqL1xuICBpbnB1dFR5cGU6IEZpcmViYXNlTW9kZWxJbnB1dFR5cGU7XG4gIC8qKlxuICAgKiBTZXQgdGhlIGlucHV0IGFzIHN0cmluZyB8IEJsb2IgYmFzZWQgb24gdGhlIGBpbnB1dFR5cGVgXG4gICAqL1xuICBpbnB1dDogc3RyaW5nIHwgQmxvYjtcbn1cblxuLyoqXG4gKiBAbmFtZSBGaXJlYmFzZSBNb2RlbFxuICogQGRlc2NyaXB0aW9uIFRoaXMgcGx1Z2luIGRvd25sb2FkcyB0aGUgVGVuc29yRmxvdyBtb2RlbCBmcm9tIGZpcmViYXNlIGFuZCBjbGFzc2lmeSB0aGUgaW1hZ2VzLlxuICpcbiAqIGBgYHR5cGVzY3JpcHRcbiAqIGltcG9ydCB7IEZpcmViYXNlTW9kZWwgfSBmcm9tICdAaW9uaWMtbmF0aXZlL2lvbmljLW5hdGl2ZS1maXJlYmFzZS1tb2RlbCc7XG4gKlxuICpcbiAqIGNvbnN0cnVjdG9yKHByaXZhdGUgZmlyZWJhc2VNb2RlbDogRmlyZWJhc2VNb2RlbCkgeyB9XG4gKlxuICogLi4uXG4gKlxuICpcbiAqIHRoaXMuZmlyZWJhc2VNb2RlbC5jb25maWd1cmUoJ1NhbXBsZV9Nb2RlbCcpXG4gKiAgIC5zdWJzY3JpYmUoKHJlczogRmlyZWJhc2VNb2RlbENvbmZpZ1Jlc3VsdCkgPT4gY29uc29sZS5sb2cocmVzLnN0YXR1cyArIFwiIC0gXCIgKyByZXMucHJvZ3Jlc3MpKVxuICogICAuY2F0Y2goKGVycm9yOiBhbnkpID0+IGNvbnNvbGUuZXJyb3IoZXJyb3IpKTtcbiAqXG4gKlxuICogdHJ5IHtcbiAqICAgIHZhciByZXN1bHQ6RmlyZWJhc2VNb2RlbENsYXNzaWZ5UmVzdWx0ID0gYXdhaXQgdGhpcy5maXJlYmFzZU1vZGVsLmNsYXNzaWZ5KFwiL0RvY3VtZW50cy9pbnB1dF9pbWFnZS5wbmdcIilcbiAqICAgIGNvbnNvbGUubG9nKHJlc3VsdC5sYWJlbCArIFwiIC0gXCIgKyByZXN1bHQuc2NvcmUpXG4gKlxuICogfVxuICogY2F0Y2ggKGUpIHtcbiAqICAgIGNvbnNvbGUubG9nKGUpXG4gKiB9XG4gKlxuICpcbiAqIGBgYFxuICovXG5AUGx1Z2luKHtcbiAgcGx1Z2luTmFtZTogJ0ZpcmViYXNlTW9kZWwnLFxuICBwbHVnaW46ICdjb3Jkb3ZhLXBsdWdpbi1maXJlYmFzZS1tb2RlbCcsIC8vIG5wbSBwYWNrYWdlIG5hbWUsIGV4YW1wbGU6IGNvcmRvdmEtcGx1Z2luLWNhbWVyYVxuICBwbHVnaW5SZWY6ICdGaXJlYmFzZU1vZGVsJywgLy8gdGhlIHZhcmlhYmxlIHJlZmVyZW5jZSB0byBjYWxsIHRoZSBwbHVnaW4sIGV4YW1wbGU6IG5hdmlnYXRvci5nZW9sb2NhdGlvblxuICByZXBvOiAnJywgLy8gdGhlIGdpdGh1YiByZXBvc2l0b3J5IFVSTCBmb3IgdGhlIHBsdWdpblxuICBpbnN0YWxsOiAnaW9uaWMgY29yZG92YSBwbHVnaW4gYWRkIGNvcmRvdmEtcGx1Z2luLWZpcmViYXNlLW1vZGVsJywgLy8gT1BUSU9OQUwgaW5zdGFsbCBjb21tYW5kLCBpbiBjYXNlIHRoZSBwbHVnaW4gcmVxdWlyZXMgdmFyaWFibGVzXG4gIGluc3RhbGxWYXJpYWJsZXM6IFtdLCAvLyBPUFRJT05BTCB0aGUgcGx1Z2luIHJlcXVpcmVzIHZhcmlhYmxlc1xuICBwbGF0Zm9ybXM6IFsnaU9TJ10sIC8vIEFycmF5IG9mIHBsYXRmb3JtcyBzdXBwb3J0ZWQsIGV4YW1wbGU6IFsnQW5kcm9pZCcsICdpT1MnXVxufSlcbkBJbmplY3RhYmxlKClcbmV4cG9ydCBjbGFzcyBGaXJlYmFzZU1vZGVsIGV4dGVuZHMgSW9uaWNOYXRpdmVQbHVnaW4ge1xuICAvKipcbiAgICogVGhpcyBmdW5jdGlvbiBjb25maWd1cmUgdGhlIEZpcmViYXNlIFRGTGl0ZSBtb2RlbCBhbmQgZG93bmxvYWRzLlxuICAgKiBAcGFyYW0ge3N0cmluZ30gYXJnMSBOYW1lIG9mIHRoZSBURkxpdGUgbW9kZWwgd2hpY2ggaXMgdXBsb2FkZWQgaW4gdGhlIEZpcmViYXNlIGNvbnNvbGVcbiAgICogQHJldHVybnMge09ic2VydmFibGU8RmlyZWJhc2VNb2RlbENvbmZpZ1Jlc3VsdD59IFJldHVybnMgYSBvYnNlcnZhYmxlIHRoYXQgZ2l2ZXMgdGhlIGNhbGxiYWNrIGZvciBkb3dubG9hZGluZyBwcm9ncmVzcyBhbmQgc3RhdHVzLlxuICAgKlxuICAgKi9cbiAgQENvcmRvdmEoe1xuICAgIHN1Y2Nlc3NJbmRleDogMSxcbiAgICBlcnJvckluZGV4OiAyLFxuICAgIG9ic2VydmFibGU6IHRydWUsXG4gIH0pXG4gIGNvbmZpZ3VyZShhcmcxOiBzdHJpbmcpOiBPYnNlcnZhYmxlPEZpcmViYXNlTW9kZWxDb25maWdSZXN1bHQ+IHtcbiAgICByZXR1cm47XG4gIH1cblxuICAvKipcbiAgICogVGhpcyBmdW5jdGlvbiBpZGVudGlmeSB0aGUgaW1hZ2UgdXNpbmcgdGhlIEZpcmViYXNlIFRGTGl0ZSBtb2RlbCB3aGljaCBpcyBjb25maWd1cmVkLlxuICAgKiBAcGFyYW0ge0ZpcmViYXNlTW9kZWxJbnB1dH0gYXJnMSAgQmFzZTY0IHN0cmluZyBvZiB0aGUgaW5wdXQgaW1hZ2Ugb3IgLlxuICAgKiBAcmV0dXJucyB7UHJvbWlzZTxGaXJlYmFzZU1vZGVsQ2xhc3NpZnlSZXN1bHQ+fSBSZXR1cm5zIGEgcHJvbWlzZSB0aGF0IHJlc29sdmVzIHRoZSBjbGFzc2lmaWNhdGlvbiByZXN1bHQuXG4gICAqXG4gICAqL1xuICBAQ29yZG92YSgpXG4gIGNsYXNzaWZ5KGFyZzE6IEZpcmViYXNlTW9kZWxJbnB1dCk6IFByb21pc2U8RmlyZWJhc2VNb2RlbENsYXNzaWZ5UmVzdWx0PiB7XG4gICAgcmV0dXJuO1xuICB9XG59XG4iXX0=

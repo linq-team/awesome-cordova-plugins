@@ -1,0 +1,32 @@
+import { __decorate, __extends } from "tslib";
+import { Injectable } from '@angular/core';
+import { AwesomeCordovaNativePlugin, cordova } from '@awesome-cordova-plugins/core';
+import { Observable } from 'rxjs';
+import * as i0 from "@angular/core";
+var Cooee = /** @class */ (function (_super) {
+    __extends(Cooee, _super);
+    function Cooee() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Cooee.prototype.sendEvent = function (eventName, eventProperties) { return cordova(this, "sendEvent", {}, arguments); };
+    Cooee.prototype.updateUserProfile = function (userProfile) { return cordova(this, "updateUserProfile", {}, arguments); };
+    Cooee.prototype.setCurrentScreen = function (screenName) { return cordova(this, "setCurrentScreen", {}, arguments); };
+    Cooee.prototype.getUserID = function () { return cordova(this, "getUserID", {}, arguments); };
+    Cooee.prototype.addCooeeCTAListener = function () { return cordova(this, "addCooeeCTAListener", { "eventObservable": true, "event": "onCooeeCTAListener", "element": "document" }, arguments); };
+    Cooee.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: Cooee, deps: null, target: i0.ɵɵFactoryTarget.Injectable });
+    Cooee.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: Cooee });
+    Cooee.pluginName = "Cooee";
+    Cooee.plugin = "@letscooee/cordova-plugin";
+    Cooee.pluginRef = "cordova.plugins.Cooee";
+    Cooee.repo = "https://github.com/letscooee/cordova-plugin-cooee";
+    Cooee.install = "ionic cordova plugin add @letscooee/cordova-plugin --variable COOEE_APP_ID=appId";
+    Cooee.installVariables = ["COOEE_APP_ID"];
+    Cooee.platforms = ["Android", "iOS"];
+    Cooee = __decorate([], Cooee);
+    return Cooee;
+}(AwesomeCordovaNativePlugin));
+export { Cooee };
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: Cooee, decorators: [{
+            type: Injectable
+        }], propDecorators: { sendEvent: [], updateUserProfile: [], setCurrentScreen: [], getUserID: [], addCooeeCTAListener: [] } });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9zcmMvQGF3ZXNvbWUtY29yZG92YS1wbHVnaW5zL3BsdWdpbnMvbGV0cy1jb29lZS9uZ3gvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE9BQU8sRUFBRSxVQUFVLEVBQUUsTUFBTSxlQUFlLENBQUM7QUFDM0MsT0FBTyx1Q0FBK0MsTUFBTSwrQkFBK0IsQ0FBQztBQUM1RixPQUFPLEVBQUUsVUFBVSxFQUFFLE1BQU0sTUFBTSxDQUFDOzs7SUFpQ1AseUJBQTBCOzs7O0lBUW5ELHlCQUFTLGFBQUMsU0FBaUIsRUFBRSxlQUFvQztJQVVqRSxpQ0FBaUIsYUFBQyxXQUFnQztJQVVsRCxnQ0FBZ0IsYUFBQyxVQUFrQjtJQVNuQyx5QkFBUztJQWFULG1DQUFtQjt1R0FsRFIsS0FBSzsyR0FBTCxLQUFLOzs7Ozs7OztJQUFMLEtBQUssa0JBQUwsS0FBSztnQkFuQ2xCO0VBbUMyQiwwQkFBMEI7U0FBeEMsS0FBSzs0RkFBTCxLQUFLO2tCQURqQixVQUFVOzhCQVNULFNBQVMsTUFVVCxpQkFBaUIsTUFVakIsZ0JBQWdCLE1BU2hCLFNBQVMsTUFhVCxtQkFBbUIiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBJbmplY3RhYmxlIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5pbXBvcnQgeyBQbHVnaW4sIENvcmRvdmEsIEF3ZXNvbWVDb3Jkb3ZhTmF0aXZlUGx1Z2luIH0gZnJvbSAnQGF3ZXNvbWUtY29yZG92YS1wbHVnaW5zL2NvcmUnO1xuaW1wb3J0IHsgT2JzZXJ2YWJsZSB9IGZyb20gJ3J4anMnO1xuXG4vKipcbiAqIEBuYW1lIExldHMgQ29vZWVcbiAqIEBkZXNjcmlwdGlvblxuICogQUkgZHJpdmVuIFBlcnNvbmFsaXNlZCBOb3RpZmljYXRpb25zIGZvciBCZXR0ZXIgQ3VzdG9tZXIgRW5nYWdlbWVudFxuICpcbiAqIEB1c2FnZVxuICogYGBgdHlwZXNjcmlwdFxuICogaW1wb3J0IHsgQ29vZWUgfSBmcm9tICdAYXdlc29tZS1jb3Jkb3ZhLXBsdWdpbnMvbGV0cy1jb29lZS9ueCc7XG4gKlxuICpcbiAqIGNvbnN0cnVjdG9yKHByaXZhdGUgY29vZWU6IENvb2VlKSB7IH1cbiAqXG4gKiAuLi5cbiAqXG4gKlxuICogdGhpcy5jb29lZS5mdW5jdGlvbk5hbWUoJ0hlbGxvJywgMTIzKVxuICogICAudGhlbigocmVzOiBhbnkpID0+IGNvbnNvbGUubG9nKHJlcykpXG4gKiAgIC5jYXRjaCgoZXJyb3I6IGFueSkgPT4gY29uc29sZS5lcnJvcihlcnJvcikpO1xuICpcbiAqIGBgYFxuICovXG5AUGx1Z2luKHtcbiAgcGx1Z2luTmFtZTogJ0Nvb2VlJyxcbiAgcGx1Z2luOiAnQGxldHNjb29lZS9jb3Jkb3ZhLXBsdWdpbicsXG4gIHBsdWdpblJlZjogJ2NvcmRvdmEucGx1Z2lucy5Db29lZScsXG4gIHJlcG86ICdodHRwczovL2dpdGh1Yi5jb20vbGV0c2Nvb2VlL2NvcmRvdmEtcGx1Z2luLWNvb2VlJyxcbiAgaW5zdGFsbDogJ2lvbmljIGNvcmRvdmEgcGx1Z2luIGFkZCBAbGV0c2Nvb2VlL2NvcmRvdmEtcGx1Z2luIC0tdmFyaWFibGUgQ09PRUVfQVBQX0lEPWFwcElkJyxcbiAgaW5zdGFsbFZhcmlhYmxlczogWydDT09FRV9BUFBfSUQnXSxcbiAgcGxhdGZvcm1zOiBbJ0FuZHJvaWQnLCAnaU9TJ10sXG59KVxuQEluamVjdGFibGUoKVxuZXhwb3J0IGNsYXNzIENvb2VlIGV4dGVuZHMgQXdlc29tZUNvcmRvdmFOYXRpdmVQbHVnaW4ge1xuICAvKipcbiAgICogU2VuZCB0aGUgZ2l2ZW4gdXNlciBkYXRhIGFuZCB1c2VyIHByb3BlcnRpZXMgdG8gdGhlIHNlcnZlci5cbiAgICogQHJldHVybiB7UHJvbWlzZTxhbnk+fSBSZXR1cm5zIGEgcHJvbWlzZSBzbyB1c2VyIGNhbiBiZSBub3RpZmllZC5cbiAgICogQHBhcmFtIGV2ZW50TmFtZSB7c3RyaW5nfSBOYW1lIG9mIHRoZSBldmVudFxuICAgKiBAcGFyYW0gZXZlbnRQcm9wZXJ0aWVzIHtSZWNvcmQ8c3RyaW5nLCBhbnk+fSBQcm9wZXJ0aWVzIG9mIHRoZSBldmVudFxuICAgKi9cbiAgQENvcmRvdmEoKVxuICBzZW5kRXZlbnQoZXZlbnROYW1lOiBzdHJpbmcsIGV2ZW50UHJvcGVydGllczogUmVjb3JkPHN0cmluZywgYW55Pik6IFByb21pc2U8YW55PiB7XG4gICAgcmV0dXJuO1xuICB9XG5cbiAgLyoqXG4gICAqIFNlbmQgdGhlIGdpdmVuIHVzZXIgZGF0YSBhbmQgdXNlciBwcm9wZXJ0aWVzIHRvIHRoZSBzZXJ2ZXIuXG4gICAqIEByZXR1cm4ge1Byb21pc2U8YW55Pn0gUmV0dXJucyBhIHByb21pc2Ugc28gdXNlciBjYW4gYmUgbm90aWZpZWQuXG4gICAqIEBwYXJhbSB1c2VyUHJvZmlsZSB7UmVjb3JkPHN0cmluZywgYW55Pn0gVXNlciBkYXRhIHRvIHNlbmQgdG8gdGhlIHNlcnZlclxuICAgKi9cbiAgQENvcmRvdmEoKVxuICB1cGRhdGVVc2VyUHJvZmlsZSh1c2VyUHJvZmlsZTogUmVjb3JkPHN0cmluZywgYW55Pik6IFByb21pc2U8YW55PiB7XG4gICAgcmV0dXJuO1xuICB9XG5cbiAgLyoqXG4gICAqIFNlbmQgdGhlIGdpdmVuIHNjcmVlbiBuYW1lIHdpdGggZXZlcnkgZXZlbnQuXG4gICAqIEByZXR1cm4ge1Byb21pc2U8YW55Pn0gUmV0dXJucyBhIHByb21pc2Ugc28gdXNlciBjYW4gYmUgbm90aWZpZWQuXG4gICAqIEBwYXJhbSBzY3JlZW5OYW1lIHtzdHJpbmd9IFNjcmVlbiBuYW1lIHRvIHNlbmQgdG8gdGhlIHNlcnZlclxuICAgKi9cbiAgQENvcmRvdmEoKVxuICBzZXRDdXJyZW50U2NyZWVuKHNjcmVlbk5hbWU6IHN0cmluZyk6IFByb21pc2U8YW55PiB7XG4gICAgcmV0dXJuO1xuICB9XG5cbiAgLyoqXG4gICAqIFByb3ZpZGUgQ29vZWUncyB1c2VySUQgYXNzaWduZWQgdG8gdGhlIGN1cnJlbnQgdXNlci5cbiAgICogQHJldHVybiB7UHJvbWlzZTxhbnk+fSBSZXR1cm5zIGEgcHJvbWlzZSB3aXRoIHVzZXJJZC5cbiAgICovXG4gIEBDb3Jkb3ZhKClcbiAgZ2V0VXNlcklEKCk6IFByb21pc2U8YW55PiB7XG4gICAgcmV0dXJuO1xuICB9XG5cbiAgLyoqXG4gICAqIFByb3ZpZGVzIGNhbGxiYWNrIGZvciB0aGUgb25Db29lZUNUQUxpc3RlbmVyIGV2ZW50LlxuICAgKiBAcmV0dXJuIHtPYnNlcnZhYmxlPEFueT59IFJldHVybnMgYW4gb2JzZXJ2YWJsZSByZWNvcmQuXG4gICAqL1xuICBAQ29yZG92YSh7XG4gICAgZXZlbnRPYnNlcnZhYmxlOiB0cnVlLFxuICAgIGV2ZW50OiAnb25Db29lZUNUQUxpc3RlbmVyJyxcbiAgICBlbGVtZW50OiBkb2N1bWVudCxcbiAgfSlcbiAgYWRkQ29vZWVDVEFMaXN0ZW5lcigpOiBPYnNlcnZhYmxlPGFueT4ge1xuICAgIHJldHVybjtcbiAgfVxufVxuIl19

@@ -1,0 +1,27 @@
+import { __decorate, __extends } from "tslib";
+import { Injectable } from '@angular/core';
+import { AwesomeCordovaNativePlugin, cordova } from '@awesome-cordova-plugins/core';
+import * as i0 from "@angular/core";
+var BrowserTab = /** @class */ (function (_super) {
+    __extends(BrowserTab, _super);
+    function BrowserTab() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    BrowserTab.prototype.isAvailable = function () { return cordova(this, "isAvailable", {}, arguments); };
+    BrowserTab.prototype.openUrl = function (url) { return cordova(this, "openUrl", {}, arguments); };
+    BrowserTab.prototype.close = function () { return cordova(this, "close", {}, arguments); };
+    BrowserTab.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: BrowserTab, deps: null, target: i0.ɵɵFactoryTarget.Injectable });
+    BrowserTab.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: BrowserTab });
+    BrowserTab.pluginName = "BrowserTab";
+    BrowserTab.plugin = "cordova-plugin-browsertab";
+    BrowserTab.pluginRef = "cordova.plugins.browsertab";
+    BrowserTab.repo = "https://github.com/google/cordova-plugin-browsertab";
+    BrowserTab.platforms = ["Android", "iOS"];
+    BrowserTab = __decorate([], BrowserTab);
+    return BrowserTab;
+}(AwesomeCordovaNativePlugin));
+export { BrowserTab };
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: BrowserTab, decorators: [{
+            type: Injectable
+        }], propDecorators: { isAvailable: [], openUrl: [], close: [] } });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9zcmMvQGF3ZXNvbWUtY29yZG92YS1wbHVnaW5zL3BsdWdpbnMvYnJvd3Nlci10YWIvbmd4L2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQSxPQUFPLEVBQUUsVUFBVSxFQUFFLE1BQU0sZUFBZSxDQUFDO0FBQzNDLE9BQU8sdUNBQStDLE1BQU0sK0JBQStCLENBQUM7OztJQWlDNUQsOEJBQTBCOzs7O0lBTXRELGdDQUFXO0lBVVgsNEJBQU8sYUFBQyxHQUFXO0lBU25CLDBCQUFLOzRHQXpCSSxVQUFVO2dIQUFWLFVBQVU7Ozs7OztJQUFWLFVBQVUsa0JBQVYsVUFBVTtxQkFsQ3ZCO0VBa0NnQywwQkFBMEI7U0FBN0MsVUFBVTs0RkFBVixVQUFVO2tCQUR0QixVQUFVOzhCQU9QLFdBQVcsTUFVWCxPQUFPLE1BU1AsS0FBSyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEluamVjdGFibGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IENvcmRvdmEsIEF3ZXNvbWVDb3Jkb3ZhTmF0aXZlUGx1Z2luLCBQbHVnaW4gfSBmcm9tICdAYXdlc29tZS1jb3Jkb3ZhLXBsdWdpbnMvY29yZSc7XG5cbi8qKlxuICogQG5hbWUgQnJvd3NlciBUYWJcbiAqIEBkZXNjcmlwdGlvblxuICogVGhpcyBwbHVnaW4gcHJvdmlkZXMgYW4gaW50ZXJmYWNlIHRvIGluLWFwcCBicm93c2VyIHRhYnMgdGhhdCBleGlzdCBvbiBzb21lIG1vYmlsZSBwbGF0Zm9ybXMsIHNwZWNpZmljYWxseSBbQ3VzdG9tIFRhYnNdKGh0dHA6Ly9kZXZlbG9wZXIuYW5kcm9pZC5jb20vdG9vbHMvc3VwcG9ydC1saWJyYXJ5L2ZlYXR1cmVzLmh0bWwjY3VzdG9tLXRhYnMpIG9uIEFuZHJvaWQgKGluY2x1ZGluZyB0aGUgW0Nocm9tZSBDdXN0b20gVGFic10oaHR0cHM6Ly9kZXZlbG9wZXIuY2hyb21lLmNvbS9tdWx0aWRldmljZS9hbmRyb2lkL2N1c3RvbXRhYnMpIGltcGxlbWVudGF0aW9uKSwgYW5kIFtTRlNhZmFyaVZpZXdDb250cm9sbGVyXShodHRwczovL2RldmVsb3Blci5hcHBsZS5jb20vbGlicmFyeS9pb3MvZG9jdW1lbnRhdGlvbi9TYWZhcmlTZXJ2aWNlcy9SZWZlcmVuY2UvU0ZTYWZhcmlWaWV3Q29udHJvbGxlcl9SZWYvKSBvbiBpT1MuXG4gKlxuICogQHVzYWdlXG4gKiBgYGB0eXBlc2NyaXB0XG4gKiBpbXBvcnQgeyBCcm93c2VyVGFiIH0gZnJvbSAnQGF3ZXNvbWUtY29yZG92YS1wbHVnaW5zL2Jyb3dzZXItdGFiL25neCc7XG4gKlxuICogY29uc3RydWN0b3IocHJpdmF0ZSBicm93c2VyVGFiOiBCcm93c2VyVGFiKSB7XG4gKlxuICogICBicm93c2VyVGFiLmlzQXZhaWxhYmxlKClcbiAqICAgICAudGhlbihpc0F2YWlsYWJsZSA9PiB7XG4gKiAgICAgICBpZiAoaXNBdmFpbGFibGUpIHtcbiAqICAgICAgICAgYnJvd3NlclRhYi5vcGVuVXJsKCdodHRwczovL2lvbmljLmlvJyk7XG4gKiAgICAgICB9IGVsc2Uge1xuICogICAgICAgICAvLyBvcGVuIFVSTCB3aXRoIEluQXBwQnJvd3NlciBpbnN0ZWFkIG9yIFNhZmFyaVZpZXdDb250cm9sbGVyXG4gKiAgICAgICB9XG4gKiAgICAgfSk7XG4gKiB9XG4gKlxuICogYGBgXG4gKi9cbkBQbHVnaW4oe1xuICAgIHBsdWdpbk5hbWU6ICdCcm93c2VyVGFiJyxcbiAgICBwbHVnaW46ICdjb3Jkb3ZhLXBsdWdpbi1icm93c2VydGFiJyxcbiAgICBwbHVnaW5SZWY6ICdjb3Jkb3ZhLnBsdWdpbnMuYnJvd3NlcnRhYicsXG4gICAgcmVwbzogJ2h0dHBzOi8vZ2l0aHViLmNvbS9nb29nbGUvY29yZG92YS1wbHVnaW4tYnJvd3NlcnRhYicsXG4gICAgcGxhdGZvcm1zOiBbJ0FuZHJvaWQnLCAnaU9TJ10sXG59KVxuQEluamVjdGFibGUoKVxuZXhwb3J0IGNsYXNzIEJyb3dzZXJUYWIgZXh0ZW5kcyBBd2Vzb21lQ29yZG92YU5hdGl2ZVBsdWdpbiB7XG4gICAgLyoqXG4gICAgICogQ2hlY2sgaWYgQnJvd3NlclRhYiBvcHRpb24gaXMgYXZhaWxhYmxlXG4gICAgICogQHJldHVybiB7UHJvbWlzZTxhbnk+fSBSZXR1cm5zIGEgcHJvbWlzZSB0aGF0IHJlc29sdmVzIHdoZW4gY2hlY2sgaXMgc3VjY2Vzc2Z1bCBhbmQgcmV0dXJucyB0cnVlIG9yIGZhbHNlXG4gICAgICovXG4gICAgQENvcmRvdmEoKVxuICAgIGlzQXZhaWxhYmxlKCk6IFByb21pc2U8YW55PiB7XG4gICAgICAgIHJldHVybjtcbiAgICB9XG5cbiAgICAvKipcbiAgICAgKiBPcGVucyB0aGUgcHJvdmlkZWQgVVJMIHVzaW5nIGEgYnJvd3NlciB0YWJcbiAgICAgKiBAcGFyYW0ge3N0cmluZ30gdXJsICBUaGUgVVJMIHlvdSB3YW50IHRvIG9wZW5cbiAgICAgKiBAcmV0dXJuIHtQcm9taXNlPGFueT59IFJldHVybnMgYSBwcm9taXNlIHRoYXQgcmVzb2x2ZXMgd2hlbiBjaGVjayBvcGVuIHdhcyBzdWNjZXNzZnVsXG4gICAgICovXG4gICAgQENvcmRvdmEoKVxuICAgIG9wZW5VcmwodXJsOiBzdHJpbmcpOiBQcm9taXNlPGFueT4ge1xuICAgICAgICByZXR1cm47XG4gICAgfVxuXG4gICAgLyoqXG4gICAgICogQ2xvc2VzIGJyb3dzZXIgdGFiXG4gICAgICogQHJldHVybiB7UHJvbWlzZTxhbnk+fSBSZXR1cm5zIGEgcHJvbWlzZSB0aGF0IHJlc29sdmVzIHdoZW4gY2xvc2Ugd2FzIGZpbmlzaGVkXG4gICAgICovXG4gICAgQENvcmRvdmEoKVxuICAgIGNsb3NlKCk6IFByb21pc2U8YW55PiB7XG4gICAgICAgIHJldHVybjtcbiAgICB9XG59XG4iXX0=

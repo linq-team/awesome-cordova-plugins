@@ -1,0 +1,30 @@
+import { __decorate, __extends } from "tslib";
+import { Injectable } from '@angular/core';
+import { AwesomeCordovaNativePlugin, cordova } from '@awesome-cordova-plugins/core';
+import * as i0 from "@angular/core";
+var DeviceAccounts = /** @class */ (function (_super) {
+    __extends(DeviceAccounts, _super);
+    function DeviceAccounts() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    DeviceAccounts.prototype.get = function () { return cordova(this, "get", {}, arguments); };
+    DeviceAccounts.prototype.getByType = function (type) { return cordova(this, "getByType", {}, arguments); };
+    DeviceAccounts.prototype.getEmails = function () { return cordova(this, "getEmails", {}, arguments); };
+    DeviceAccounts.prototype.getEmail = function () { return cordova(this, "getEmail", {}, arguments); };
+    DeviceAccounts.prototype.getPermissions = function () { return cordova(this, "getPermissions", {}, arguments); };
+    DeviceAccounts.prototype.getPermissionsByType = function (type) { return cordova(this, "getPermissionsByType", {}, arguments); };
+    DeviceAccounts.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: DeviceAccounts, deps: null, target: i0.ɵɵFactoryTarget.Injectable });
+    DeviceAccounts.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: DeviceAccounts });
+    DeviceAccounts.pluginName = "DeviceAccounts";
+    DeviceAccounts.plugin = "cordova-device-accounts-v2";
+    DeviceAccounts.pluginRef = "DeviceAccounts";
+    DeviceAccounts.repo = "https://github.com/xUnholy/cordova-device-accounts-v2";
+    DeviceAccounts.platforms = ["Android"];
+    DeviceAccounts = __decorate([], DeviceAccounts);
+    return DeviceAccounts;
+}(AwesomeCordovaNativePlugin));
+export { DeviceAccounts };
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: DeviceAccounts, decorators: [{
+            type: Injectable
+        }], propDecorators: { get: [], getByType: [], getEmails: [], getEmail: [], getPermissions: [], getPermissionsByType: [] } });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9zcmMvQGF3ZXNvbWUtY29yZG92YS1wbHVnaW5zL3BsdWdpbnMvZGV2aWNlLWFjY291bnRzL25neC9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsT0FBTyxFQUFFLFVBQVUsRUFBRSxNQUFNLGVBQWUsQ0FBQztBQUMzQyxPQUFPLHVDQUErQyxNQUFNLCtCQUErQixDQUFDOzs7SUF5Q3hELGtDQUEwQjs7OztJQU81RCw0QkFBRztJQVdILGtDQUFTLGFBQUMsSUFBWTtJQVV0QixrQ0FBUztJQVVULGlDQUFRO0lBVVIsdUNBQWM7SUFXZCw2Q0FBb0IsYUFBQyxJQUFZO2dIQTNEdEIsY0FBYztvSEFBZCxjQUFjOzs7Ozs7SUFBZCxjQUFjLGtCQUFkLGNBQWM7eUJBMUMzQjtFQTBDb0MsMEJBQTBCO1NBQWpELGNBQWM7NEZBQWQsY0FBYztrQkFEMUIsVUFBVTs4QkFRVCxHQUFHLE1BV0gsU0FBUyxNQVVULFNBQVMsTUFVVCxRQUFRLE1BVVIsY0FBYyxNQVdkLG9CQUFvQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEluamVjdGFibGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IENvcmRvdmEsIEF3ZXNvbWVDb3Jkb3ZhTmF0aXZlUGx1Z2luLCBQbHVnaW4gfSBmcm9tICdAYXdlc29tZS1jb3Jkb3ZhLXBsdWdpbnMvY29yZSc7XG5cbmV4cG9ydCBpbnRlcmZhY2UgQW5kcm9pZEFjY291bnQge1xuICAvKiogQWNjb3VudCBjcmVhdG9yICovXG4gIENSRUFUT1I6IEFuZHJvaWRBY2NvdW50O1xuXG4gIC8qKiBBY2NvdW50IG5hbWUgKi9cbiAgbmFtZTogc3RyaW5nO1xuXG4gIC8qKiBBY2NvdW50IHR5cGUgKi9cbiAgdHlwZTogc3RyaW5nO1xufVxuXG4vKipcbiAqIEBuYW1lIERldmljZSBBY2NvdW50c1xuICogQGRlc2NyaXB0aW9uXG4gKiBHZXRzIHRoZSBHb29nbGUgYWNjb3VudHMgYXNzb2NpYXRlZCB3aXRoIHRoZSBBbmRyb2lkIGRldmljZVxuICogQHVzYWdlXG4gKiBgYGB0eXBlc2NyaXB0XG4gKiBpbXBvcnQgeyBEZXZpY2VBY2NvdW50cyB9IGZyb20gJ0Bhd2Vzb21lLWNvcmRvdmEtcGx1Z2lucy9kZXZpY2UtYWNjb3VudHMvbmd4JztcbiAqXG4gKiBjb25zdHJ1Y3Rvcihwcml2YXRlIGRldmljZUFjY291bnRzOiBEZXZpY2VBY2NvdW50cykgeyB9XG4gKlxuICogLi4uXG4gKlxuICogdGhpcy5kZXZpY2VBY2NvdW50cy5nZXQoKVxuICogICAudGhlbihhY2NvdW50cyA9PiBjb25zb2xlLmxvZyhhY2NvdW50cykpXG4gKiAgIC5jYXRjaChlcnJvciA9PiBjb25zb2xlLmVycm9yKGVycm9yKSk7XG4gKlxuICogYGBgXG4gKiBAaW50ZXJmYWNlc1xuICogQW5kcm9pZEFjY291bnRcbiAqL1xuQFBsdWdpbih7XG4gIHBsdWdpbk5hbWU6ICdEZXZpY2VBY2NvdW50cycsXG4gIHBsdWdpbjogJ2NvcmRvdmEtZGV2aWNlLWFjY291bnRzLXYyJyxcbiAgcGx1Z2luUmVmOiAnRGV2aWNlQWNjb3VudHMnLFxuICByZXBvOiAnaHR0cHM6Ly9naXRodWIuY29tL3hVbmhvbHkvY29yZG92YS1kZXZpY2UtYWNjb3VudHMtdjInLFxuICBwbGF0Zm9ybXM6IFsnQW5kcm9pZCddLFxufSlcbkBJbmplY3RhYmxlKClcbmV4cG9ydCBjbGFzcyBEZXZpY2VBY2NvdW50cyBleHRlbmRzIEF3ZXNvbWVDb3Jkb3ZhTmF0aXZlUGx1Z2luIHtcbiAgLyoqXG4gICAqICBHZXRzIGFsbCBhY2NvdW50cyByZWdpc3RlcmVkIG9uIHRoZSBBbmRyb2lkIERldmljZVxuICAgKlxuICAgKiBAcmV0dXJucyB7UHJvbWlzZTxBbmRyb2lkQWNjb3VudFtdPn1cbiAgICovXG4gIEBDb3Jkb3ZhKClcbiAgZ2V0KCk6IFByb21pc2U8QW5kcm9pZEFjY291bnRbXT4ge1xuICAgIHJldHVybjtcbiAgfVxuXG4gIC8qKlxuICAgKiAgR2V0IGFsbCBhY2NvdW50cyByZWdpc3RlcmVkIG9uIEFuZHJvaWQgZGV2aWNlIGZvciByZXF1ZXN0ZWQgdHlwZVxuICAgKlxuICAgKiBAcGFyYW0ge3N0cmluZ30gdHlwZVxuICAgKiBAcmV0dXJucyB7UHJvbWlzZTxBbmRyb2lkQWNjb3VudFtdPn1cbiAgICovXG4gIEBDb3Jkb3ZhKClcbiAgZ2V0QnlUeXBlKHR5cGU6IHN0cmluZyk6IFByb21pc2U8QW5kcm9pZEFjY291bnRbXT4ge1xuICAgIHJldHVybjtcbiAgfVxuXG4gIC8qKlxuICAgKiAgR2V0IGFsbCBlbWFpbHMgcmVnaXN0ZXJlZCBvbiBBbmRyb2lkIGRldmljZSAoYWNjb3VudHMgd2l0aCAnY29tLmdvb2dsZScgdHlwZSlcbiAgICpcbiAgICogQHJldHVybnMge1Byb21pc2U8c3RyaW5nW10+fVxuICAgKi9cbiAgQENvcmRvdmEoKVxuICBnZXRFbWFpbHMoKTogUHJvbWlzZTxzdHJpbmdbXT4ge1xuICAgIHJldHVybjtcbiAgfVxuXG4gIC8qKlxuICAgKiAgR2V0IHRoZSBmaXJzdCBlbWFpbCByZWdpc3RlcmVkIG9uIEFuZHJvaWQgZGV2aWNlXG4gICAqXG4gICAqIEByZXR1cm5zIHtQcm9taXNlPHN0cmluZz59XG4gICAqL1xuICBAQ29yZG92YSgpXG4gIGdldEVtYWlsKCk6IFByb21pc2U8c3RyaW5nPiB7XG4gICAgcmV0dXJuO1xuICB9XG5cbiAgLyoqXG4gICAqICBHZXQgcGVybWlzc2lvbnMgZm9yIGFjY2VzcyB0byBlbWFpbCByZWdpc3RlcmVkIG9uIEFuZHJvaWQgZGV2aWNlIDguMCtcbiAgICpcbiAgICogQHJldHVybnMge1Byb21pc2U8c3RyaW5nPn1cbiAgICovXG4gIEBDb3Jkb3ZhKClcbiAgZ2V0UGVybWlzc2lvbnMoKTogUHJvbWlzZTxzdHJpbmc+IHtcbiAgICByZXR1cm47XG4gIH1cblxuICAvKipcbiAgICogIEdldCBwZXJtaXNzaW9ucyBmb3IgYWNjZXNzIHRvIGVtYWlsIHJlZ2lzdGVyZWQgb24gQW5kcm9pZCBkZXZpY2UgOC4wKyBmb3IgcmVxdWVzdGVkIHR5cGVcbiAgICpcbiAgICogQHBhcmFtIHtzdHJpbmd9IHR5cGVcbiAgICogQHJldHVybnMge1Byb21pc2U8c3RyaW5nPn1cbiAgICovXG4gIEBDb3Jkb3ZhKClcbiAgZ2V0UGVybWlzc2lvbnNCeVR5cGUodHlwZTogc3RyaW5nKTogUHJvbWlzZTxzdHJpbmc+IHtcbiAgICByZXR1cm47XG4gIH1cbn1cbiJdfQ==

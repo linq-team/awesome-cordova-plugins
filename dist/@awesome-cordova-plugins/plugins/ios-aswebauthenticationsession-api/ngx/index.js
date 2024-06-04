@@ -1,0 +1,25 @@
+import { __decorate, __extends } from "tslib";
+import { Injectable } from '@angular/core';
+import { AwesomeCordovaNativePlugin, cordova } from '@awesome-cordova-plugins/core';
+import * as i0 from "@angular/core";
+var IosASWebauthenticationSession = /** @class */ (function (_super) {
+    __extends(IosASWebauthenticationSession, _super);
+    function IosASWebauthenticationSession() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    IosASWebauthenticationSession.prototype.start = function (callbackUrl, authorizeURL) { return cordova(this, "start", {}, arguments); };
+    IosASWebauthenticationSession.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: IosASWebauthenticationSession, deps: null, target: i0.ɵɵFactoryTarget.Injectable });
+    IosASWebauthenticationSession.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: IosASWebauthenticationSession });
+    IosASWebauthenticationSession.pluginName = "IosASWebauthenticationSession";
+    IosASWebauthenticationSession.plugin = "cordova-plugin-ios-aswebauthenticationsession-api";
+    IosASWebauthenticationSession.pluginRef = "plugins.ASWebAuthSession";
+    IosASWebauthenticationSession.repo = "https://github.com/jwelker110/cordova-plugin-ios-aswebauthenticationsession-api";
+    IosASWebauthenticationSession.platforms = ["iOS"];
+    IosASWebauthenticationSession = __decorate([], IosASWebauthenticationSession);
+    return IosASWebauthenticationSession;
+}(AwesomeCordovaNativePlugin));
+export { IosASWebauthenticationSession };
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: IosASWebauthenticationSession, decorators: [{
+            type: Injectable
+        }], propDecorators: { start: [] } });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9zcmMvQGF3ZXNvbWUtY29yZG92YS1wbHVnaW5zL3BsdWdpbnMvaW9zLWFzd2ViYXV0aGVudGljYXRpb25zZXNzaW9uLWFwaS9uZ3gvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE9BQU8sRUFBRSxVQUFVLEVBQUUsTUFBTSxlQUFlLENBQUM7QUFDM0MsT0FBTyx1Q0FBK0MsTUFBTSwrQkFBK0IsQ0FBQzs7O0lBK0J6QyxpREFBMEI7Ozs7SUFTM0UsNkNBQUssYUFBQyxXQUFtQixFQUFFLFlBQW9COytIQVRwQyw2QkFBNkI7bUlBQTdCLDZCQUE2Qjs7Ozs7O0lBQTdCLDZCQUE2QixrQkFBN0IsNkJBQTZCO3dDQWhDMUM7RUFnQ21ELDBCQUEwQjtTQUFoRSw2QkFBNkI7NEZBQTdCLDZCQUE2QjtrQkFEekMsVUFBVTs4QkFVVCxLQUFLIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSW5qZWN0YWJsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuaW1wb3J0IHsgUGx1Z2luLCBDb3Jkb3ZhLCBBd2Vzb21lQ29yZG92YU5hdGl2ZVBsdWdpbiB9IGZyb20gJ0Bhd2Vzb21lLWNvcmRvdmEtcGx1Z2lucy9jb3JlJztcblxuLyoqXG4gKiBAbmFtZSBpb3MtYXN3ZWJhdXRoZW50aWNhdGlvbnNlc3Npb24tYXBpXG4gKiBAZGVzY3JpcHRpb25cbiAqIFBsdWdpbiBmb3IgaU9TIDEyIEFTV2ViQXV0aGVudGljYXRpb25TZXNzaW9uIEFQSVxuICogQHVzYWdlXG4gKiBgYGB0eXBlc2NyaXB0XG4gKiBpbXBvcnQgeyBJb3NBU1dlYmF1dGhlbnRpY2F0aW9uU2Vzc2lvbiB9IGZyb20gJ0Bhd2Vzb21lLWNvcmRvdmEtcGx1Z2lucy9pb3MtYXN3ZWJhdXRoZW50aWNhdGlvbnNlc3Npb24tYXBpL25neCc7XG4gKlxuICpcbiAqIGNvbnN0cnVjdG9yKHByaXZhdGUgSW9zQVNXZWJhdXRoZW50aWNhdGlvblNlc3Npb246IGlvcy1hc3dlYmF1dGhlbnRpY2F0aW9uc2Vzc2lvbi1hcGkpIHsgfVxuICpcbiAqIC4uLlxuICpcbiAqXG4gKiB0aGlzLklvc0FTV2ViYXV0aGVudGljYXRpb25TZXNzaW9uLnN0YXJ0KGNhbGxiYWNrVXJsLCBhdXRob3JpemVVUkwpXG4gKiAgIC50aGVuKChyZWRpcmVjdFVybDogc3RyaW5nKSA9PiBjb25zb2xlLmxvZyhyZWRpcmVjdFVybCkpXG4gKiAgIC5jYXRjaCgoZXJyb3I6IGFueSkgPT4gY29uc29sZS5lcnJvcihlcnJvcikpO1xuICpcbiAqIGBgYFxuICovXG5cbkBQbHVnaW4oe1xuICBwbHVnaW5OYW1lOiAnSW9zQVNXZWJhdXRoZW50aWNhdGlvblNlc3Npb24nLFxuICBwbHVnaW46ICdjb3Jkb3ZhLXBsdWdpbi1pb3MtYXN3ZWJhdXRoZW50aWNhdGlvbnNlc3Npb24tYXBpJyxcbiAgcGx1Z2luUmVmOiAncGx1Z2lucy5BU1dlYkF1dGhTZXNzaW9uJyxcbiAgcmVwbzogJ2h0dHBzOi8vZ2l0aHViLmNvbS9qd2Vsa2VyMTEwL2NvcmRvdmEtcGx1Z2luLWlvcy1hc3dlYmF1dGhlbnRpY2F0aW9uc2Vzc2lvbi1hcGknLFxuICBwbGF0Zm9ybXM6IFsnaU9TJ10sXG59KVxuQEluamVjdGFibGUoKVxuZXhwb3J0IGNsYXNzIElvc0FTV2ViYXV0aGVudGljYXRpb25TZXNzaW9uIGV4dGVuZHMgQXdlc29tZUNvcmRvdmFOYXRpdmVQbHVnaW4ge1xuICAvKipcbiAgICogVGhpcyBmdW5jdGlvbiBzdGFydCBhbiBhdXRoZW50aWNhdGlvbiBmbG93IGluIEFTV2ViYXV0aGVudGljYXRpb25TZXNzaW9uXG4gICAqXG4gICAqIEBwYXJhbSBjYWxsYmFja1VybCB7c3RyaW5nfSBDYWxsYmFjayBVUkwgb2YgeW91ciBBcHBcbiAgICogQHBhcmFtIGF1dGhvcml6ZVVSTCB7bnVtYmVyfSBBdXRob3JpemF0aW9uIFVSTFxuICAgKiBAcmV0dXJucyB7UHJvbWlzZTxzdHJpbmc+fSBSZXR1cm5zIGEgcHJvbWlzZSB0aGF0IHJlc29sdmVzIGEgc3RyaW5nIGNvbnRhaW5pbmcgdGhlIHJlZGlyZWN0IFVSTCBhZnRlciBmaW5pc2hpbmcgQVNXZWJhdXRoZW50aWNhdGlvblNlc3Npb25cbiAgICovXG4gIEBDb3Jkb3ZhKClcbiAgc3RhcnQoY2FsbGJhY2tVcmw6IHN0cmluZywgYXV0aG9yaXplVVJMOiBzdHJpbmcpOiBQcm9taXNlPHN0cmluZz4ge1xuICAgIHJldHVybjtcbiAgfVxufVxuIl19

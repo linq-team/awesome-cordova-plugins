@@ -1,0 +1,27 @@
+import { __decorate, __extends } from "tslib";
+import { Injectable } from '@angular/core';
+import { AwesomeCordovaNativePlugin, cordova } from '@awesome-cordova-plugins/core';
+import * as i0 from "@angular/core";
+var FirebaseCrash = /** @class */ (function (_super) {
+    __extends(FirebaseCrash, _super);
+    function FirebaseCrash() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    FirebaseCrash.prototype.log = function (message) { return cordova(this, "log", { "sync": true }, arguments); };
+    FirebaseCrash.prototype.logError = function (message) { return cordova(this, "logError", { "sync": true }, arguments); };
+    FirebaseCrash.prototype.setUserId = function (userId) { return cordova(this, "setUserId", { "sync": true }, arguments); };
+    FirebaseCrash.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: FirebaseCrash, deps: null, target: i0.ɵɵFactoryTarget.Injectable });
+    FirebaseCrash.ɵprov = i0.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: FirebaseCrash });
+    FirebaseCrash.pluginName = "FirebaseCrash";
+    FirebaseCrash.plugin = "cordova-plugin-firebase-crash";
+    FirebaseCrash.pluginRef = "cordova.plugins.firebase.crashlytics";
+    FirebaseCrash.repo = "https://github.com/chemerisuk/cordova-plugin-firebase-crash";
+    FirebaseCrash.platforms = ["Android", "iOS"];
+    FirebaseCrash = __decorate([], FirebaseCrash);
+    return FirebaseCrash;
+}(AwesomeCordovaNativePlugin));
+export { FirebaseCrash };
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0, type: FirebaseCrash, decorators: [{
+            type: Injectable
+        }], propDecorators: { log: [], logError: [], setUserId: [] } });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9zcmMvQGF3ZXNvbWUtY29yZG92YS1wbHVnaW5zL3BsdWdpbnMvZmlyZWJhc2UtY3Jhc2gvbmd4L2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQSxPQUFPLEVBQUUsVUFBVSxFQUFFLE1BQU0sZUFBZSxDQUFDO0FBQzNDLE9BQU8sdUNBQStDLE1BQU0sK0JBQStCLENBQUM7OztJQTRCekQsaUNBQTBCOzs7O0lBUzNELDJCQUFHLGFBQUMsT0FBZTtJQVluQixnQ0FBUSxhQUFDLE9BQWU7SUFZeEIsaUNBQVMsYUFBQyxNQUFjOytHQWpDYixhQUFhO21IQUFiLGFBQWE7Ozs7OztJQUFiLGFBQWEsa0JBQWIsYUFBYTt3QkE3QjFCO0VBNkJtQywwQkFBMEI7U0FBaEQsYUFBYTs0RkFBYixhQUFhO2tCQUR6QixVQUFVOzhCQVVULEdBQUcsTUFZSCxRQUFRLE1BWVIsU0FBUyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEluamVjdGFibGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IENvcmRvdmEsIEF3ZXNvbWVDb3Jkb3ZhTmF0aXZlUGx1Z2luLCBQbHVnaW4gfSBmcm9tICdAYXdlc29tZS1jb3Jkb3ZhLXBsdWdpbnMvY29yZSc7XG5cbi8qKlxuICogQG5hbWUgRmlyZWJhc2VDcmFzaFxuICogQGRlc2NyaXB0aW9uXG4gKiBUaGlzIHBsdWdpbiBicmluZ3MgY3Jhc2ggcmVwb3J0aW5nIGZyb20gR29vZ2xlIEZpcmViYXNlIHRvIHlvdXIgQ29yZG92YSBwcm9qZWN0ISBBbmRyb2lkIGFuZCBpT1Mgc3VwcG9ydGVkLlxuICogQHVzYWdlXG4gKiBgYGB0eXBlc2NyaXB0XG4gKiBpbXBvcnQgeyBGaXJlYmFzZUNyYXNoIH0gZnJvbSAnQGF3ZXNvbWUtY29yZG92YS1wbHVnaW5zL2ZpcmViYXNlLWNyYXNoJztcbiAqXG4gKiBjb25zdHJ1Y3Rvcihwcml2YXRlIGZpcmViYXNlQ3Jhc2g6IEZpcmViYXNlQ3Jhc2gpIHsgfVxuICpcbiAqIC4uLlxuICpcbiAqIHRoaXMuZmlyZWJhc2VDcmFzaC5zZXRVc2VySWQoJzEyMzQ1Njc4OScpO1xuICogdGhpcy5maXJlYmFzZUNyYXNoLmxvZygnbWVzc2FnZScpO1xuICogdGhpcy5maXJlYmFzZUNyYXNoLmxvZ0Vycm9yKCdub24gZmF0YWwgZXhjZXB0aW9uJyk7XG4gKlxuICogYGBgXG4gKi9cbkBQbHVnaW4oe1xuICBwbHVnaW5OYW1lOiAnRmlyZWJhc2VDcmFzaCcsXG4gIHBsdWdpbjogJ2NvcmRvdmEtcGx1Z2luLWZpcmViYXNlLWNyYXNoJyxcbiAgcGx1Z2luUmVmOiAnY29yZG92YS5wbHVnaW5zLmZpcmViYXNlLmNyYXNobHl0aWNzJyxcbiAgcmVwbzogJ2h0dHBzOi8vZ2l0aHViLmNvbS9jaGVtZXJpc3VrL2NvcmRvdmEtcGx1Z2luLWZpcmViYXNlLWNyYXNoJyxcbiAgcGxhdGZvcm1zOiBbJ0FuZHJvaWQnLCAnaU9TJ10sXG59KVxuQEluamVjdGFibGUoKVxuZXhwb3J0IGNsYXNzIEZpcmViYXNlQ3Jhc2ggZXh0ZW5kcyBBd2Vzb21lQ29yZG92YU5hdGl2ZVBsdWdpbiB7XG4gIC8qKlxuICAgKiBBZGQgbG9nZ2luZyB0aGF0IHdpbGwgYmUgc2VudCB3aXRoIHlvdXIgY3Jhc2ggZGF0YSBpbiBjYXNlIG9mIGFwcCBjcmFzaC5cbiAgICogaHR0cHM6Ly9maXJlYmFzZS5nb29nbGUuY29tL2RvY3MvY3Jhc2hseXRpY3MvY3VzdG9taXplLWNyYXNoLXJlcG9ydHM/YXV0aHVzZXI9MCNhZGRfY3VzdG9tX2xvZ3NcbiAgICpcbiAgICogQHBhcmFtIHtzdHJpbmd9IG1lc3NhZ2VcbiAgICogQHJldHVybnMge1Byb21pc2U8YW55Pn1cbiAgICovXG4gIEBDb3Jkb3ZhKHsgc3luYzogdHJ1ZSB9KVxuICBsb2cobWVzc2FnZTogc3RyaW5nKTogUHJvbWlzZTxhbnk+IHtcbiAgICByZXR1cm47XG4gIH1cblxuICAvKipcbiAgICogTG9nIG5vbi1mYXRhbCBleGNlcHRpb25zIGluIGFkZGl0aW9uIHRvIGF1dG9tYXRpY2FsbHkgcmVwb3J0ZWQgYXBwIGNyYXNoZXMuXG4gICAqIGh0dHBzOi8vZmlyZWJhc2UuZ29vZ2xlLmNvbS9kb2NzL2NyYXNobHl0aWNzL2N1c3RvbWl6ZS1jcmFzaC1yZXBvcnRzP2F1dGh1c2VyPTAjbG9nX25vbi1mYXRhbF9leGNlcHRpb25zXG4gICAqXG4gICAqIEBwYXJhbSB7c3RyaW5nfSBtZXNzYWdlXG4gICAqIEByZXR1cm5zIHtQcm9taXNlPGFueT59XG4gICAqL1xuICBAQ29yZG92YSh7IHN5bmM6IHRydWUgfSlcbiAgbG9nRXJyb3IobWVzc2FnZTogc3RyaW5nKTogUHJvbWlzZTxhbnk+IHtcbiAgICByZXR1cm47XG4gIH1cblxuICAvKipcbiAgICogU2V0cyB0aGUgdXNlciBpZGVudGlmaWVyIHByb3BlcnR5IGZvciBjcmFzaGx5dGljcyByZXBvcnRpbmcuXG4gICAqIGh0dHBzOi8vZmlyZWJhc2UuZ29vZ2xlLmNvbS9kb2NzL2NyYXNobHl0aWNzL2N1c3RvbWl6ZS1jcmFzaC1yZXBvcnRzP2F1dGh1c2VyPTAjc2V0X3VzZXJfaWRzXG4gICAqXG4gICAqIEBwYXJhbSB7c3RyaW5nfSB1c2VySWQgdmFsdWUgdG8gc2V0IHRoZSB1c2VySWRcbiAgICogQHJldHVybnMge1Byb21pc2U8YW55Pn1cbiAgICovXG4gIEBDb3Jkb3ZhKHsgc3luYzogdHJ1ZSB9KVxuICBzZXRVc2VySWQodXNlcklkOiBzdHJpbmcpOiBQcm9taXNlPGFueT4ge1xuICAgIHJldHVybjtcbiAgfVxufVxuIl19
